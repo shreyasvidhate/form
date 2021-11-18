@@ -1,0 +1,9 @@
+<form #registerform='ngForm' (ngSubmit)='onSubmit(registerform)'>
+    <input #name='ngModel' type="text"  placeholder="Name" name="userName" ngModel>
+    <input #studentID='ngModel' type="number"  placeholder="Student-ID" name="userID" ngModel>
+    <input type="text">
+    <input #number='ngModel' type="number" placeholder="Mobile Number" name="userNumber" ngModel required pattern="^[7-9][0-9]{9}$"
+    (keydown)='keyfunc()'>
+    <button type="submit" [disabled]='check' (click)='fcheck(registerform.invalid)'>Save</button>
+</form>
+<app-hall-ticket></app-hall-ticket>

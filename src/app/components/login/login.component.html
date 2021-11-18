@@ -1,0 +1,36 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+  rel="stylesheet"
+/>
+<section class="content">
+  <!-- <img class="back" src="https://png.pngtree.com/background/20210711/original/pngtree-college-entrance-examination-must-win-inspirational-poster-background-material-picture-image_1087088.jpg" alt=""> -->
+  <div class="main">
+  <img
+    class="icon"
+    src="..\assets\logo.png"
+    alt="not found"
+  />
+  <h2>Hey,</h2>
+  <h2>Login Now.</h2>
+
+  <form #userForm='ngForm' (ngSubmit)='onSubmit(userForm.value)'>
+    <input #email='ngModel' type="email" placeholder="📧 Email-id" name="useremail"  ngModel autocomplete="off" required pattern="(^|22010)[0-9]{3}(@viit.ac.in)" (keydown)='keyfunc()'/>
+    <span *ngIf="check">incorrect mail</span>
+    <input #password='ngModel' type="password" placeholder="🔒 Password" name="userpassword"  ngModel autocomplete="off"required pattern="(^|22010)[0-9]{3}(@viit.ac.in)" (keydown)='keyfunc()'/>
+    <span *ngIf="check">incorrect password</span>
+    <hr/>
+    <button class="btn" type="submit" [disabled]='check' (click)='fcheck(userForm.invalid)' >Login</button>
+    <span *ngIf='check'>fill the form correctly</span>
+  </form>
+</div>
+</section>

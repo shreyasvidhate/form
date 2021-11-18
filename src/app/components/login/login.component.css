@@ -1,0 +1,128 @@
+.content{
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+  }
+  
+  .main {
+    border-color: lightseagreen;
+    border-radius: 5px;
+    font-family: "Merriweather", serif;
+    width: 40%;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    margin: auto;
+    top:155.8px;
+  }
+  
+  input[type="email"],
+  [type="password"] {
+    display: block;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 15px auto;
+    background-color: rgb(218, 245, 235);
+    border-radius: 15px;
+    border-style: none;
+    outline-style: none;
+  }
+  
+  hr {
+    border-style: dotted none none;
+    border-color: #eaf6f6;
+    border-width: 5px;
+    height: 0%;
+    width: 4%;
+    margin: 10px auto;
+  }
+  
+  .icon {
+    width: 8%;
+  }
+  
+  .btn {
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background: #9e9080;
+    background-image: -webkit-linear-gradient(top, #9e9080, #734608);
+    background-image: -moz-linear-gradient(top, #9e9080, #734608);
+    background-image: -ms-linear-gradient(top, #9e9080, #734608);
+    background-image: -o-linear-gradient(top, #9e9080, #734608);
+    background-image: linear-gradient(to bottom, #9e9080, #734608);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    font-family: "Merriweather", serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #bdae9d;
+    background-image: -webkit-linear-gradient(top, #bdae9d, #855a22);
+    background-image: -moz-linear-gradient(top, #bdae9d, #855a22);
+    background-image: -ms-linear-gradient(top, #bdae9d, #855a22);
+    background-image: -o-linear-gradient(top, #bdae9d, #855a22);
+    background-image: linear-gradient(to bottom, #bdae9d, #855a22);
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .btn:active{
+    background: #bdae9d;
+    background-image: -webkit-linear-gradient(top, #bdae9d, #855a22);
+    background-image: -moz-linear-gradient(top, #c77b25, #855a22);
+    background-image: -ms-linear-gradient(top, #bdae9d, #855a22);
+    background-image: -o-linear-gradient(top, #bdae9d, #dfa963);
+    background-image: linear-gradient(to bottom, #bdae9d, #ffc476);
+    text-decoration: none;
+    color: #ffffff;
+    border-style: none;
+    outline-style: none;
+  }
+  p {
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    font-size: smaller;
+  }
+  
+  a {
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: medium;
+    font-weight: bold;
+    color: #c21f1a;
+  }
+  
+  a:hover {
+    color: #da514c;
+  }
+  input.ng-valid{
+    border: 3px solid green;
+  }
+  span{
+    color: red;
+    font-size: small;
+  }
+
+@media(max-width:576px){
+    .main{
+      width: 90%;
+      height: 60%;
+    }
+}
+@media(min-width:577px) and (max-width:768px){
+    .main{
+      width: 60%;
+    }
+}
