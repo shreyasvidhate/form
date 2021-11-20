@@ -23,10 +23,12 @@ input[type="text"],
 input[type="number"],
 input[type="password"],
 input[type="email"],
+input[type="date"],
 select{
     width: 100%;
     padding: 10px;
     outline-style: none;
+    background-color: #e5f8f3;
     border:1px solid #a5c451;
     border-radius: 8px;
 }
@@ -37,15 +39,17 @@ input::-webkit-inner-spin-button {
 }
 
 button[type="submit"] {
-    background-color: #5f0013;
+    background-color: #fc6161;
     color:rgb(255, 255, 255);
     padding: 12px 20px;
     width: 100%;
+    border-style: none;
     font-weight:bold;
     font-size: large;
     cursor: pointer;
     border-radius: 8px;
 }
 button[type="submit"]:hover{
-    background-color: #a51330;
+    background-color: #f07474;
 }
+

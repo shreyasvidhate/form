@@ -1,6 +1,15 @@
 <div #content id="content" *ngIf='check'>
 <h1>Name:{{name}}</h1>
-<h1>Number:{{number}}</h1>
+<h1>Gender:{{gender}}</h1>
+<h1>DOB:{{dob}}</h1>
+<h1>Age:{{age}}</h1>
+<h1>Institue Name:{{InsName}}</h1>
+<h1>Class:{{class}}</h1>
+<h1>Branch:{{branch}}</h1>
+<h1>Roll.No.:{{rno}}</h1>
+<h1>Division:{{division}}</h1>
 <h1>Email:{{stdEmail}}</h1>
+<h1>Mobile Number:{{number}}</h1>
+
 </div>
 <button (click)='downloadPdf()' [hidden]='fcheck'>{{statement}}</button>
