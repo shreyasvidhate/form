@@ -12,9 +12,10 @@ export class HallTicketComponent implements OnInit {
   stdData: any;
   name:any;
   number: any;
-  stdID:any;
+  stdEmail:any;
   statement:string | undefined;
   check=false
+  check1=false
   fcheck=true
   constructor(private regserivce:InfoServiceService) {
    
@@ -25,8 +26,9 @@ export class HallTicketComponent implements OnInit {
       this.stdData=obj
       this.name=this.stdData.userName
       this.number=this.stdData.userNumber
-      this.stdID=this.stdData.userID
+      this.stdEmail=this.stdData.userEmail
       this.fcheck=false
+      this.check1=true
       this.statement="Preview"
     })
   }

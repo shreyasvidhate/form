@@ -1,5 +1,6 @@
 <div #content id="content" *ngIf='check'>
 <h1>Name:{{name}}</h1>
 <h1>Number:{{number}}</h1>
+<h1>Email:{{stdEmail}}</h1>
 </div>
-<button (click)='downloadPdf()'[hidden]='fcheck'>{{statement}}</button>
+<button (click)='downloadPdf()' [hidden]='fcheck'>{{statement}}</button>

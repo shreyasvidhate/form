@@ -1,9 +1,12 @@
+*{
+  box-sizing: border-box;
+}
 .content{
-    height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
+  display: flex;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #ffbcbc, #fec8b8, #f9d4ba, #f3e0c3, #eeead0, #e8edd5, #e4f0db, #e0f3e2, #d5f1e2, #caefe3, #bfede6, #b5eaea);
   }
   
   .main {
