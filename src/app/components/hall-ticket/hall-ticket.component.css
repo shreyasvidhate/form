@@ -38,3 +38,14 @@ h1,h3{
     right: 3%;
     bottom: 0;
 }
+@media(max-width:576px){
+    .content{
+      width: 90%;
+      height: 60%;
+    }
+}
+@media(min-width:577px) and (max-width:768px){
+    .content{
+      width: 60%;
+    }
+}

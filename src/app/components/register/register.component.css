@@ -64,3 +64,26 @@ img{
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(5px);
 }
+@media(max-width:576px){
+    .container{
+      width: 90%;
+      height: 60%;
+    }
+    img{
+        display: none;
+    }
+    input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select{
+    width: 100%;
+
+}
+}
+@media(min-width:577px) and (max-width:768px){
+    .container{
+      width: 70%;
+    }
+}
