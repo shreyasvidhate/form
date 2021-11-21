@@ -1,39 +1,134 @@
 <div class="container">
+  <a href="https://imgur.com/UFZKh6V"><img src="https://i.ibb.co/34jSdJW/VIIT-TALENT-HUNT-logos-white.png" alt="VIIT-TALENT-HUNT-logos-white"></a>
     <h1>VIIT Talent Hunt</h1>
     <h3>Exam Registration Form</h3>
-<form #registerform='ngForm' (ngSubmit)='onSubmit(registerform)'>
-    <p>Name:<input #name='ngModel' type="text"  placeholder="FirstName  MiddleName  LastName" name="userName" ngModel autocomplete="off" required>
-    </p>
-    <p>Institute Name:
-    <input #studentInstitute #name='ngModel' type="text" name='userInstitute' ngModel autocomplete="off" required>
-    </p>
-    <p>Class:
-        <select name="card_type" id="card_type" required >
-            <option value="">--Select Your Current Year--</option>
-            <option value="First">First Year</option>
-            <option value="Second">Second Year</option>
-            <option value="Third">Third Year</option>
-            <option value="Final">Final Year</option>
+    <form #registerform="ngForm" (ngSubmit)="onSubmit(registerform)">
+      <p>
+        Name:<input
+          #name="ngModel"
+          type="text"
+          placeholder="FirstName  MiddleName  LastName"
+          name="userName"
+          ngModel
+  
+          required
+        />
+      </p>
+  
+      <p style="width: 25%; display: inline-block; margin-left: 8%;">
+        Gender:
+        <select name="Gender" required #name="ngModel" ngModel>
+          <option value="">--Select Gender--</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
         </select>
-    </p>
-    <p>Branch:
-        <select name="card_type" id="card_type" required >
-            <option value="">--Select Your Branch--</option>
-            <option value="CSE">CSE</option>
-            <option value="IT">IT</option>
-            <option value="ETC">E&TC</option>
-            <option value="MECH">Mech</option>
-            <option value="CIVIL">Civil</option>
-            <option value="AIDS">AI&DS</option>
-            <option value="OTHER">Other</option>
+      </p>
+      <p style="width: 25%; display: inline-block; margin: 0px 5%">
+        Date Of Birth:<input
+          #name="ngModel"
+          type="date"
+          name="DOB"
+          ngModel
+  
+          required
+        />
+      </p>
+      <p style="width: 25%; display: inline-block">
+        Age:<input
+          type="number"
+          #name="ngModel"
+          name="Age"
+          ngModel
+  
+          required
+        />
+      </p>
+  
+      <p>
+        Institute Name:
+        <input
+          type="text"
+          #name="ngModel"    
+          name="userInstitute"
+          ngModel
+  
+          required
+        />
+      </p>
+      <p>
+        Class:
+        <select name="Class" required #name="ngModel" ngModel>
+          <option value="">--Select Your Current Year--</option>
+          <option value="First&nbsp;Year">First Year</option>
+          <option value="Second&nbsp;Year">Secont Year</option>
+          <option value="Third&nbsp;Year">Thirt Year</option>
+          <option value="Final&nbsp;Year">Finat Year</option>
         </select>
-    </p> 
-    <p>Roll.No:<input type='number' #name='ngModel' name='RollNo' ngModel autocomplete="off" required></p>
-    <p>DIVISION:<input type='text' #name='ngModel' name="Division" ngModel autocomplete="off" required></p>
-    <p>E-mail ID:<input #studentEmail type="email" placeholder="CollegeID" name='userEmail' ngModel autocomplete="off" required></p>
-    <p>Mobile Number:<input #number='ngModel' type="number" name="userNumber" ngModel autocomplete="off" required pattern="^[7-9][0-9]{9}$"
-    (keydown)='keyfunc()'></p>
-    <button type="submit" [disabled]='check' (click)='fcheck(registerform.invalid)' >Save</button>
-</form>
-</div>
-<app-hall-ticket></app-hall-ticket>
+      </p>
+      <p>
+        Branch:
+        <select name="Branch" required #name="ngModel" ngModel>
+          <option value="">--Select Your Branch--</option>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="E&TC">E&TC</option>
+          <option value="MECH">Mech</option>
+          <option value="CIVIL">Civil</option>
+          <option value="AI&DS">AI&DS</option>
+          <option value="OTHER">Other</option>
+        </select>
+      </p>
+      <p>
+        Roll.No:<input
+          type="number"
+          #name="ngModel"
+          name="RollNo"
+          ngModel
+  
+          required
+        />
+      </p>
+      <p>
+        DIVISION:<input
+          type="text"
+          #name="ngModel"
+          name="Division"
+          ngModel
+  
+          required
+        />
+      </p>
+      <p>
+        E-mail ID:<input
+          #studentEmail
+          type="email"
+          placeholder="CollegeID"
+          name="userEmail"
+          ngModel
+  
+          required
+        />
+      </p>
+      <p>
+        Mobile Number:<input
+          #number="ngModel"
+          type="number"
+          name="userNumber"
+          ngModel
+  
+          required
+          pattern="^[7-9][0-9]{9}$"
+          (keydown)="keyfunc()"
+        />
+      </p>
+      <button
+        type="submit"
+        [disabled]="check"
+        (click)="fcheck(registerform.invalid)"
+      >
+        Save
+      </button>
+    </form>
+  </div>
+  <app-hall-ticket></app-hall-ticket>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { InfoServiceService } from '../info-service.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { InfoServiceService } from '../info-service.service';
 })
 export class RegisterComponent implements OnInit {
   check=false;
-  constructor(private router:Router, private regserivce:InfoServiceService) {  
+  constructor(private regserivce:InfoServiceService) {  
   }
   ngOnInit(): void {
   }

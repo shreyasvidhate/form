@@ -1,6 +1,25 @@
 <div #content id="content" *ngIf='check'>
-<h1>Name:{{name}}</h1>
-<h1>Number:{{number}}</h1>
-<h1>Email:{{stdEmail}}</h1>
+    <h1>VIIT Talent Hunt</h1>
+    <h3>HALL-TICKET</h3>
+    <hr>
+    <div class="infobox">
+        <h2>Candidate Inofrmation</h2>
+        <span>Name:{{name}}</span>
+        <span>Gender:{{gender}}</span>
+        <span>Date Of Birth:{{dob}}</span>
+        <span>Age:{{age}}</span>
+        <p>Institue Name:{{InsName}}</p>
+        <span>Class:{{class}}</span>
+        <span>Branch:{{branch}}</span>
+        <span>Roll.No.:{{rno}}</span>
+        <span>Division:{{division}}</span>
+    </div>
+    <div class="contactbox">
+        <hr>
+        <h2>Candidate's Contact Details</h2>
+        <p>Email:{{stdEmail}}</p>
+        <p>Mobile Number:{{number}}</p>
+        <p class="signature">Candidate Signature</p>
+    </div>
 </div>
-<button (click)='downloadPdf()' [hidden]='fcheck'>{{statement}}</button>
+    <button (click)='downloadPdf()' [hidden]='fcheck'>{{statement}}</button>

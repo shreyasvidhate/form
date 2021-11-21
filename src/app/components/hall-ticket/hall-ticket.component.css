@@ -1,0 +1,40 @@
+#content{
+    width: 850px;
+    height: 475px;
+}
+h1,h3{
+    text-align: center;
+}
+.infobox{
+    margin-top: 2%;
+}
+.infobox>h2{
+    text-align: center;
+}
+.infobox p{
+    margin-left:3% ;
+    margin-right:3% ;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: small;
+}
+.infobox span{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: small;
+}
+.contactbox{
+    margin-top: 2%;
+}
+.contactbox>h2{
+    text-align: center;
+}
+.contactbox p{
+    margin-left: 3%;
+    font-size: small;
+}
+.signature{
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+}
